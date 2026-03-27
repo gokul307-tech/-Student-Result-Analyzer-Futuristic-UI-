@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>⚡ Student Result Analyzer</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>📊 STUDENT RESULT ANALYZER</h1>
+
+    <!-- Input Section -->
+    <div class="inputs">
+        <input type="number" id="math" placeholder="Math Marks (0-100)">
+        <input type="number" id="physics" placeholder="Physics Marks (0-100)">
+        <input type="number" id="chemistry" placeholder="Chemistry Marks (0-100)">
+        <input type="number" id="english" placeholder="English Marks (0-100)">
+    </div>
+
+    <!-- Button -->
+    <button onclick="analyze()">Analyze Result</button>
+
+    <!-- Output -->
+    <div id="output">
+        <p>✨ Enter marks and click analyze to see your performance</p>
+    </div>
+
+    <!-- Chart -->
+    <canvas id="chart" height="100"></canvas>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
